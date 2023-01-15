@@ -15,8 +15,10 @@ header {
 
 /*HEADER*/
 .navegation {
+  position: fixed;
   background-color: #1F1F29;
   width: 100%;
+  padding: 0.5rem;
 }
 .navegation ul {
   list-style: none;
@@ -27,52 +29,87 @@ header {
 }
 .navegation li:hover {
   background-color: #0F0C0C;
+  transition: all 0.3s ease-in-out;
 }
 .navegation a {
   text-decoration: none;
   color: #F5F5FA;
 }
-.navegation .logo {
-  padding: 0.5rem;
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
 }
-.navegation .logo a {
+.logo-container a {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-family: "Times New Roman", Times, serif;
 }
+.logo-container a:nth-child(1) {
+  margin-left: 24px;
+}
+.logo-container a:nth-child(2) {
+  margin-right: 24px;
+}
 
 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   max-width: 800px;
   color: #13131A;
-  padding: 1rem;
   margin: auto;
+  padding: 1rem;
 }
 .box h1 {
   padding: 1rem;
   text-align: center;
 }
 .box form {
-  display: flex;
-  flex-direction: column;
-  max-width: 583px;
   margin: auto;
+  max-width: 583px;
 }
 .box form input {
   width: 100%;
+  text-align: center;
   margin: auto;
   margin-top: 1rem;
   padding: 0.5em;
 }
 .box form button {
+  display: block;
   width: 50%;
   border: none;
+  background-color: #ec7608;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #ec7608;
   margin: auto;
   margin-top: 1rem;
   padding: 0.5em;
 }
 .box form button:hover {
   background-color: rgba(255, 152, 56, 0.9921568627);
+}
+
+.menu-hidden {
+  display: none;
+}
+
+.menu-active {
+  display: block;
+}
+
+@media (min-width: 583px) {
+  .navegation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navegation ul {
+    display: flex;
+  }
+  .logo-container a:nth-child(2) {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

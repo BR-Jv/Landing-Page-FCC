@@ -19,48 +19,70 @@ html, body {
 header {
     height: 100%;
 }
-/*HEADER*/
 
+/*HEADER*/
 @mixin setupForm(){
     margin: auto;
     margin-top: 1rem;
     padding: 0.5em;
+    
 }
 
 .navegation {
+    position: fixed;
     background-color: $bg-nav;
     width: 100%;
+    padding: 0.5rem;
 
     ul {
         list-style: none;
         text-align: center;
+        
     }
     li {
         padding: 1rem;
         &:hover {
             background-color: $bg-nav-hover;
+            transition: all .30s ease-in-out;
         }
     }
     a {
         text-decoration: none;
         color: $color-nav-link;  
     }
-    .logo {
-        padding: 0.5rem;
-
-        a {
-            letter-spacing: 0.1rem;
-            text-transform: uppercase;
-            font-family: 'Times New Roman', Times, serif;
+}
+.logo-container {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    
+    a {
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;    
+        
+        &:nth-child(1){
+            margin-left: 24px;
+        }
+        &:nth-child(2){
+            margin-right: 24px;
         }
     }
+    
 }
-
 .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
     max-width: 800px;
+    
     color: $color-text-main;
-    padding: 1rem;
+    
     margin: auto;
+    padding: 1rem;
     
     h1 {
         padding: 1rem;
@@ -68,26 +90,51 @@ header {
     }
     
     form {
-        display: flex;
-        flex-direction: column;
-        max-width: 583px;
         margin: auto;
+        max-width: 583px;
 
         input {
             width: 100%;
+            text-align: center;
             @include setupForm()
         }
         button {
+            display: block;
             width: 50%;
-            border: none;
+            border: none;        
+            background-color: $bg-btn;
+
             font-weight: bold;
             text-transform: uppercase;
-            background-color: $bg-btn;
+
             &:hover {
                 background-color: $bg-btn-hover;
             }
             @include setupForm()
         }
     }
+}
+.menu-hidden {
+    display: none;
+}
+.menu-active {
+    display: block;
+}
+@media (min-width: 583px){
+    .navegation {    
+        display: flex;
+        justify-content: space-between;
+        ul {
+            display: flex;
+        }
+    }  
 
+    .logo-container {
+        a {
+            &:nth-child(2){
+                display: none;
+            }
+        }
+        
+    }
 }

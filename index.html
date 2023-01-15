@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/af1ebb5d32.js" crossorigin="anonymous"></script>
+    <script src="js/menuToggle.js" defer></script>
     <title>Landing page</title>
 </head>
 <body>
     <header>
         <nav class="navegation">
-            <div class="logo">
+            <div class="logo-container">
                 <a href="#">Logo</a>
+                <a href="#" id="btnMenu"><i class="fa-solid fa-bars"></i></a>
             </div>
-            <ul class="nav-bar">
+            <ul class="menu-hidden" id="navLinks">
                 <li><a href="#">Features</a></li>
                 <li><a href="#">How It Works</a></li>
                 <li><a href="#">Pricing</a></li>
             </ul>
         </nav>
         <div class="box">
-            <h1>Handcraft, home-made masterpieces</h1>
             <form action="">
+                <h1>Handcraft, home-made masterpieces</h1>
                 <input type="text" required placeholder="Enter your email address">
                 <button type="submit">get started</button>
             </form>
