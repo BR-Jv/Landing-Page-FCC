@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +8,15 @@
 html, body {
   width: 100%;
   height: 100vh;
+  background-color: #F5F5FA;
 }
 
-header {
+header, main {
   height: 100%;
 }
 
-/*HEADER*/
+/*----------HEADER----------*/
+/*NAVEGATION*/
 .navegation {
   position: fixed;
   background-color: #1F1F29;
@@ -50,10 +53,21 @@ header {
   margin-left: 24px;
 }
 .logo-container a:nth-child(2) {
+  cursor: pointer;
   margin-right: 24px;
 }
 
+.menu-hidden {
+  display: none;
+}
+
+.menu-active {
+  display: block;
+}
+
+/*BOX*/
 .box {
+  /*Esse código se repete*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,14 +107,39 @@ header {
   background-color: rgba(255, 152, 56, 0.9921568627);
 }
 
-.menu-hidden {
+/*----------MAIN----------*/
+/*FEATURES*/
+.row {
+  width: 100%;
+}
+
+.col-one {
+  width: 20%;
   display: none;
+  color: #ec7608;
 }
 
-.menu-active {
-  display: block;
+.col-two {
+  width: 100%;
+  padding: 1rem;
+}
+.col-two h2 {
+  text-align: center;
+  padding: 0.2rem;
+}
+.col-two p {
+  font-size: 0.9rem;
 }
 
+/*HOW IT WORKS*/
+#HowItWorks {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+/*PRICING*/
+/*----------FOOTER----------*/
 @media (min-width: 583px) {
   .navegation {
     display: flex;
@@ -111,5 +150,18 @@ header {
   }
   .logo-container a:nth-child(2) {
     display: none;
+  }
+  /*MAIN*/
+  .row {
+    display: flex;
+  }
+  .col-one {
+    /*código se repete*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .col-two h2 {
+    text-align: start;
   }
 }/*# sourceMappingURL=main.css.map */

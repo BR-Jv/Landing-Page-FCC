@@ -14,20 +14,21 @@ $bg-btn-hover: #ff9838fd;
 html, body {
     width: 100%;
     height: 100vh;
+    background-color: $color-nav-link;
 }
-
-header {
+header, main {
     height: 100%;
 }
 
-/*HEADER*/
+/*----------HEADER----------*/
+
 @mixin setupForm(){
     margin: auto;
     margin-top: 1rem;
     padding: 0.5em;
     
 }
-
+/*NAVEGATION*/
 .navegation {
     position: fixed;
     background-color: $bg-nav;
@@ -66,17 +67,26 @@ header {
             margin-left: 24px;
         }
         &:nth-child(2){
+            cursor: pointer;
             margin-right: 24px;
         }
     }
     
 }
+.menu-hidden {
+    display: none;
+}
+.menu-active {
+    display: block;
+}
+/*BOX*/
 .box {
+    /*Esse código se repete*/
     display: flex;
     justify-content: center;
     align-items: center;
-
     height: 100%;
+
     max-width: 800px;
     
     color: $color-text-main;
@@ -114,12 +124,42 @@ header {
         }
     }
 }
-.menu-hidden {
+
+/*----------MAIN----------*/
+
+/*FEATURES*/
+.row {
+    width: 100%;
+}
+.col-one {
+    width: 20%;    
     display: none;
+    color: $bg-btn;
 }
-.menu-active {
-    display: block;
+.col-two{
+    width: 100%;
+    padding: 1rem;
+
+    h2 {
+        text-align: center;
+        padding: .2rem;
+    }
+    p {
+        font-size: .9rem;
+    }
 }
+
+/*HOW IT WORKS*/
+
+#HowItWorks {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+/*PRICING*/
+
+/*----------FOOTER----------*/
+
 @media (min-width: 583px){
     .navegation {    
         display: flex;
@@ -136,5 +176,21 @@ header {
             }
         }
         
+    }
+    /*MAIN*/
+    .row {
+        display: flex;
+    }
+    .col-one {
+        /*código se repete*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-two {
+        h2 {
+
+            text-align: start;
+        }
     }
 }
