@@ -161,6 +161,10 @@ header, main {
     justify-content: center;
     align-items: center;
   }
+  .col-one img {
+    width: 38px;
+    height: 68px;
+  }
   .col-two h2 {
     text-align: start;
   }

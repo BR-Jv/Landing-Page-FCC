@@ -186,6 +186,11 @@ header, main {
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        img {
+            width: 38px;
+            height: 68px;
+        }
     }
     .col-two {
         h2 {
