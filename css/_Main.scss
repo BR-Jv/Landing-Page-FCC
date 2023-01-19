@@ -1,0 +1,72 @@
+
+/*FEATURES*/
+.row {
+    width: 100%;
+}
+.col-one {
+    width: 20%;    
+    display: none;
+    color: $bg-btn;
+}
+.col-two{
+    width: 100%;
+    padding: $p-1;
+
+    h2 {
+        text-align: center;
+        padding: 14px 0;
+    }
+    p {
+        font-size: .9rem;
+    }
+}
+/*HOW IT WORKS*/
+#HowItWorks {
+    padding: 3rem 0;
+    @include d-flex($eixo-x: center);
+}
+/*PRICING*/
+.cards {
+    @include d-flex($eixo-y: center, $direction: column);
+    gap: 24px;
+    padding: 32px 0;
+}
+.card {
+    border: 1px solid black;
+    width: 300px;
+    height: 317px;
+}
+.card-header {
+    @include d-flex($eixo-x: center,$eixo-y: center);
+
+    height: 20%;
+    background-color: rgba($color: $bg-nav, $alpha: .1);
+    color: $color-text-main;
+    padding: 16px;
+    
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
+}
+.card-body {
+    @include d-flex($eixo-x: center, $eixo-y: center, $direction: column);
+    gap: 16px;
+    
+    height: 60%;
+    text-align: center;
+    font-size: 14px;
+    padding: 12px;
+
+    span {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+.card-footer {
+    height: 20%;
+    padding: 12px;
+    @include d-flex($eixo-x: center,$eixo-y: center);
+}

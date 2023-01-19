@@ -1,0 +1,85 @@
+
+header {
+    height: 50%;
+}
+/*NAVEGATION*/
+.navegation {
+    position: fixed;
+    
+    @include styleNav();
+
+    li {
+        &:hover {
+            background-color: $bg-nav-hover;
+            transition: all .30s ease-in-out;
+        }
+    }
+}
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: $p-1;
+    
+    a {
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;    
+        
+        &:nth-child(1){
+            margin-left: 24px;
+        }
+        &:nth-child(2){
+            cursor: pointer;
+            margin-right: 24px;
+        }
+    }
+    
+}
+.menu-hidden {
+    display: none;
+}
+.menu-active {
+    display: block;
+}
+/*BOX*/
+.box {
+    height: 100%;
+    width: 100%;
+    color: $color-text-main;
+    
+    @include d-flex($eixo-x: center,$eixo-y: flex-end);
+    
+    h1 {
+        padding: $p-1;
+        text-align: center;
+    }
+    
+    form {
+        max-width: 683px;
+        padding: $p-1;
+        @include d-flex($eixo-y: center, $direction: column);
+        
+        input {
+            width: 80%;
+            text-align: center;
+            @include styleInput();
+            border: 1px solid $bg-btn;
+        }
+        
+        button {
+            margin-top: 12px;
+        }
+    }
+}
+.btn { 
+    background-color: $bg-btn;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $bg-btn-hover;
+    }
+
+    @include styleInput();
+}
