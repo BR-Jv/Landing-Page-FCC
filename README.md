@@ -7,6 +7,6 @@ Página inspirada no Projeto Landing Page do módulo <a href="https://www.freeco
 <a href="#"><img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"></a><br>
 <a href="#"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"></a>
 
-**Projeto em execução:** <a href="https://br-jv.github.io/Landing-Page-FCC/">Landing-Page-FCC</a><br>
+**Projeto em execução:** <a href="https://br-jv.github.io/Landing-Page-FCC/" target="_blank">Landing-Page-FCC</a><br>
 
 :wave: *fique à vontade para enviar seu feedback sobre esse projeto* 
