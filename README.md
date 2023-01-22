@@ -1,12 +1,24 @@
-# Landing-Page-FCC
+<h1 align="center">Landing-Page-FCC</h1>
 
-Página inspirada no Projeto Landing Page do módulo <a href="https://www.freecodecamp.org/learn/responsive-web-design/">responsive web design(legacy)</a> do **freecodecamp**. Na construção dessa página tive meu primeiro contato com SCSS. Durante o desenvolvimento busquei organizar os arquivos de estilização e constuir um html semântico.<br><br> 
-**Status do desenvolvimento:** *finalizado*
-## Tecnologias usadas:
-<a href="#"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"></a><br>
-<a href="#"><img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"></a><br>
-<a href="#"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"></a>
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
 
-**Projeto em execução:** <a href="https://br-jv.github.io/Landing-Page-FCC/" target="_blank">Landing-Page-FCC</a><br>
+### Tecnologias
 
-:wave: *fique à vontade para enviar seu feedback sobre esse projeto* 
+Projeto desenvolvido com as seguintes tecnologias:  
+
+- HTML 
+- CSS 
+- Javascript
+
+### Projeto 
+
+Página estática e com layout responsivo, desenvolvi essa página como exercicio do módulo de desenvolvimento web do [freecodecamp](https://www.freecodecamp.org/learn/responsive-web-design/). Além disso, esse é meu primeiro contato com SASS. 
+- [Projeto em execução](https://br-jv.github.io/Landing-Page-FCC/)
+
+
+<p align="center">
+:wave: fique à vontade para enviar seu feedback sobre esse projeto<br>
+Feito com dedicação por João Victor
+</p>
