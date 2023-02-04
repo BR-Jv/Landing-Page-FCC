@@ -1,4 +1,3 @@
-
 header {
     height: 50%;
 }
@@ -48,7 +47,7 @@ header {
     width: 100%;
     color: $color-text-main;
     
-    @include d-flex($eixo-x: center,$eixo-y: flex-end);
+    @include d-flex($eixo-x: center,$eixo-y: center);
     
     h1 {
         padding: $p-1;

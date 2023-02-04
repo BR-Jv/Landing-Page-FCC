@@ -41,8 +41,10 @@ html, body {
     align-items: $eixo-y;
     flex-direction: $direction;
 }
+
 @import 'Header';
 @import 'Main';
+
 footer {
     @include styleNav();
     p {
@@ -70,6 +72,8 @@ footer {
     }
     /*MAIN*/
     .row {
+        width: 80%;
+        margin: auto;
         display: flex;
     }
     .col-one {

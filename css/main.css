@@ -70,7 +70,7 @@ header {
   color: #13131A;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: row;
 }
 .box h1 {
@@ -241,6 +241,8 @@ footer p {
   }
   /*MAIN*/
   .row {
+    width: 80%;
+    margin: auto;
     display: flex;
   }
   .col-one {
