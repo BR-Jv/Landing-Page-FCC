@@ -7,7 +7,7 @@
 
 ### Projeto 
 
-Página estática e com layout responsivo, desenvolvida como exercicio do módulo de desenvolvimento web (Legacy) do [freecodecamp](https://www.freecodecamp.org/learn/responsive-web-design/). <br>
+Página estática e com layout responsivo, desenvolvida como exercicio do módulo de desenvolvimento web (Legacy) do [freecodecamp](https://www.freecodecamp.org/learn/responsive-web-design/). <br><br>
 [visualizar página.](https://br-jv.github.io/Landing-Page-FCC/)
 
 ### Tecnologias
